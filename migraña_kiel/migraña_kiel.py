@@ -1,9 +1,9 @@
-# Exploracion inicial datashare
+# Exploracion inicial migraña kiel
 # Se importa pandas
 import pandas as pd
 
-# Se carga el archivo
-df = pd.read_csv("/Users/joseromerodegaetano/desktop/DS/IST_corrected.csv", encoding="latin-1")
+# Se carga el archivop
+df = pd.read_excel("/Users/joseromerodegaetano/Desktop/Evaluating treatment success in CGRP antibody prophylaxis.xlsx")
 
 # Tipo de datos
 df.info()
