@@ -3,7 +3,7 @@
 import pandas as pd
 
 # Se carga el archivo
-df = pd.read_csv("/Users/joseromerodegaetano/desktop/DARWIN/DARWIN.csv")
+df = pd.read_csv("/Users/joseromerodegaetano/desktop/DS/IST_corrected.csv", encoding="latin-1")
 
 # Tipo de datos
 df.info()
@@ -17,4 +17,3 @@ print(df.describe())
 print(df.isnull().sum())
 # Nombres de las columnas
 print(df.columns)
-
