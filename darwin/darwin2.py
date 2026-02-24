@@ -18,3 +18,13 @@ print(df.isnull().sum())
 # Nombres de las columnas
 print(df.columns)
 
+# Proporción 'P' y 'H'
+conteo = df['class'].value_counts()
+print(conteo)
+# Proporción 'P' y 'H' en porcentaje
+print(df['class'].value_counts(normalize=True))
+
+# Número de filas y columnas
+filas = df.shape[0]
+columnas = df.shape[1]
+print(f"El dataset tiene {filas} filas y {columnas} columnas")
