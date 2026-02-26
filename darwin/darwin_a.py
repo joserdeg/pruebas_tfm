@@ -1,3 +1,4 @@
+# Descarga desde UCIMLREPO
 from ucimlrepo import fetch_ucirepo 
   
 # fetch dataset 
