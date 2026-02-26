@@ -1,6 +1,8 @@
 # Exploracion inicial darwin
-# Se importa pandas
+# Se importan las librerias
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Se carga el archivo
 df = pd.read_csv("/Users/joseromerodegaetano/desktop/DARWIN/DARWIN.csv")
@@ -28,3 +30,15 @@ print(df['class'].value_counts(normalize=True))
 filas = df.shape[0]
 columnas = df.shape[1]
 print(f"El dataset tiene {filas} filas y {columnas} columnas")
+
+# Mostrar primer filas
+df.iloc[:, 0]
+
+# Gráfico P vs H
+sns.countplot(x="class", data=df)
+plt.title("Proporción pacientes (P) vs sanos (H)")
+plt.show()
+
+# Proporción pacientes
+resumen_clases = df.groupby('class').mean(numeric_only=True)
+print(resumen_clases.iloc[:, :18]) # Para las 18 primeras variables
