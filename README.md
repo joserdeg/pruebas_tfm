@@ -4,6 +4,8 @@ En el arcihvo `darwin_exp0.ipynb` se presenta un análisis exploratorio incial r
 
 En el archivo `darwin_exp1.ipynb` se presenta un análisis descriptivo y estadístico agrupado según la tarea indicada (1-25), para estudiar las variables mas influyentes y su relación según la tarea.
 
+El archivo `darwin2.py` simplemnte se encuentra parea realizar distintas pruebas y verificar posibles resultados, antes de efectuarlos en los notebooks.
+
 **Referencias bibliográficas**
 
 Fontanella, F. (2022). DARWIN [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C55D0K.

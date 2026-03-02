@@ -1,5 +1,7 @@
-# Exploracion inicial darwin
-# Se importan las librerias
+"""
+Archivo de Python para realizar distintas pruebas y verificaciones
+"""
+#Se importan las librerias
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
