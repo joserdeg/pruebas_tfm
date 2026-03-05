@@ -1,10 +1,25 @@
 # pruebas_tfm
 
+## Exploración de datos
+
 En el arcihvo `darwin_exp0.ipynb` se presenta un análisis exploratorio incial realizado al conjunto de datos de la base de datos DARWIN (en su totalidad).
 
 En el archivo `darwin_exp1.ipynb` se presenta un análisis descriptivo y estadístico agrupado según la tarea indicada (1-25), para estudiar las variables mas influyentes y su relación según la tarea.
 
-El archivo `darwin2.py` simplemnte se encuentra parea realizar distintas pruebas y verificar posibles resultados, antes de efectuarlos en los notebooks.
+El archivo `darwin2.py` simplemnte se encuentra parea realizar distintas pruebas y verificar posibles resultados, antes de efectuarlos en los notebooks
+
+## Clasificadores
+
+1. Regresion logistica (LR)
+2. Decision Tree (DT)
+3. Random Forest (RF)
+4. k-Nearest Neighbor (kNN)
+5. Linear discriminant analysis (LDA)
+6. Support Vector Machines (SVM)
+7. Gaussian Naive Bayes (GNB)
+8. Multilayer Perceptron (MLP)
+9. Learning Vector Quantization (LVQ)
+
 
 **Referencias bibliográficas**
 
