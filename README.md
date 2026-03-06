@@ -10,9 +10,9 @@ El archivo `darwin2.py` simplemnte se encuentra parea realizar distintas pruebas
 
 ## Clasificadores
 
-1. Regresion logistica (LR)
-2. Decision Tree (DT)
-3. Random Forest (RF)
+1. Regresion logistica (LR) -
+2. Decision Tree (DT) -
+3. Random Forest (RF) -
 4. k-Nearest Neighbor (kNN)
 5. Linear discriminant analysis (LDA)
 6. Support Vector Machines (SVM)
