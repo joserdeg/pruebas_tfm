@@ -10,15 +10,21 @@ El archivo `darwin2.py` simplemnte se encuentra parea realizar distintas pruebas
 
 ## Clasificadores
 
-1. Regresion logistica (LR) -
-2. Decision Tree (DT) -
-3. Random Forest (RF) -
+1. Regresion logistica (LR) 
+2. Decision Tree (DT) 
+3. Random Forest (RF) 
 4. k-Nearest Neighbor (kNN)
 5. Linear discriminant analysis (LDA)
 6. Support Vector Machines (SVM)
 7. Gaussian Naive Bayes (GNB)
 8. Multilayer Perceptron (MLP)
 9. Learning Vector Quantization (LVQ)
+
+En el archivo `darwin_ml0.ipynb` se aplican los distintos clasificadores al conjunto de datos entero.
+
+En el archivo `darwin_ml2.ipynb` se aplican los clasificadores a cada tarea, por separado.
+
+En el archivo `darwin_ml1.ipynb` se realiza una prueba de eliminación de variables, de aquellas con una alta correlación r > 0.90.
 
 
 **Referencias bibliográficas**
