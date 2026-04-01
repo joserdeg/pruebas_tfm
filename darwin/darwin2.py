@@ -1,8 +1,6 @@
 """
-evaluar_modelos_darwin.py
-=========================
-Evalúa los 9 algoritmos BASE (sin mejora) sobre las 25 tareas del dataset DARWIN
-y devuelve una tabla con Accuracy, Sensibilidad, Especificidad y F1 por tarea/algoritmo.
+Se evalúan los 9 algoritmos BASE (sin mejora) sobre las 25 tareas del dataset DARWIN
+y se devuelve una tabla con Accuracy, Sensibilidad, Especificidad y F1 por tarea/algoritmo.
 
 Uso:
     from evaluar_modelos_darwin import evaluar_todos_los_modelos
@@ -31,7 +29,7 @@ import xgboost as xgb
 
 
 # ---------------------------------------------------------------------------
-# 1. Función auxiliar: extrae las columnas de una tarea específica
+# Función: se extrae las columnas de una tarea específica
 # ---------------------------------------------------------------------------
 def analizar_tarea(df, num_tarea):
     """
@@ -53,7 +51,7 @@ def analizar_tarea(df, num_tarea):
 
 
 # ---------------------------------------------------------------------------
-# 2. LVQ manual (igual que en el notebook)
+# LVQ  
 # ---------------------------------------------------------------------------
 def _entrenar_lvq(X, Y, n_prototipos_por_clase=2, learning_rate=0.01, epochs=100):
     clases = np.unique(Y)
@@ -87,7 +85,7 @@ def _predecir_lvq(X, prototipos, labels_p):
 
 
 # ---------------------------------------------------------------------------
-# 3. Diccionario de modelos BASE (sin mejora)
+# Diccionario de modelos (version estándar)
 # ---------------------------------------------------------------------------
 def _get_modelos_base():
     return {
@@ -108,24 +106,24 @@ def _get_modelos_base():
                     solver="adam", max_iter=1000, random_state=42,
                     learning_rate_init=0.001
                ),
-        # LVQ se trata aparte por ser manual
+        
         "LVQ": None,
     }
 
 
 # ---------------------------------------------------------------------------
-# 4. Función principal
+# Función principal
 # ---------------------------------------------------------------------------
 def evaluar_todos_los_modelos(df, test_size=0.2, random_state=42, verbose=True):
     """
-    Evalúa los 9 algoritmos BASE sobre las 25 tareas del dataset DARWIN.
+    Se evaluan los 9 algoritmos BASE sobre las 25 tareas del dataset DARWIN.
 
     Parámetros
     ----------
     df           : DataFrame completo (features + columna 'class')
     test_size    : proporción para test (default 0.2)
     random_state : semilla (default 42)
-    verbose      : imprime progreso tarea a tarea
+    verbose      : progreso tarea a tarea
 
     Retorna
     -------
@@ -213,7 +211,7 @@ def evaluar_todos_los_modelos(df, test_size=0.2, random_state=42, verbose=True):
 
 
 # ---------------------------------------------------------------------------
-# 5. Helpers opcionales para visualización rápida
+# Helpers
 # ---------------------------------------------------------------------------
 def tabla_pivot(df_resultados, metrica="Accuracy"):
     """
@@ -232,7 +230,7 @@ def mejor_algoritmo_por_tarea(df_resultados, metrica="Accuracy"):
 
 
 # ---------------------------------------------------------------------------
-# Ejecución directa (si se llama como script)
+# Ejecución directa
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
     from ucimlrepo import fetch_ucirepo
