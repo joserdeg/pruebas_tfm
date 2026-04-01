@@ -38,6 +38,14 @@ En el archivo `darwin_ml3.ipynb` se aplican los algoritmos de ML seleccionados (
 
 En el archivo `darwin_ml4.ipynb` se aplican los algoritmos de ML seleccionados (DT, RF, XGB y GNB) en su versión por defecto a cada tarea del dataset, para aplicar a posterior los LLM SHAP y LIME a cada ML.
 
+# NOTAS
+
+- Al eliminar `mean_jerk_in_air` y `mean_speed_on_paper` por su alta correlación, los resultados no mejoran se mantienen iguales o peores.
+- Los ML que mejor resultados arrojan son DT, RF, XGB y GNB.
+- La tarea 19 parece ser la que mayor valor de Accuracy arroja al aplicar los disntos algoritmos de ML. Seguida va la tarea 7.
+- Las variables mas importantes extraídas del LLM SHAP (del XGBoost aplicado al dataset entero) son `total_time23` y `air_time_17`.
+- Al analizar el dataset por tareas con SHAP las variables mas destacadas en los distintos ML son `pressure_mean1`, `mean_speed_on_paper1`,
+
 **Referencias bibliográficas**
 
 Fontanella, F. (2022). DARWIN [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C55D0K.
