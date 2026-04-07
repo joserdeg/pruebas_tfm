@@ -41,10 +41,44 @@ En el archivo `darwin_ml4.ipynb` se aplican los algoritmos de ML seleccionados (
 # NOTAS
 
 - Al eliminar `mean_jerk_in_air` y `mean_speed_on_paper` por su alta correlación, los resultados no mejoran se mantienen iguales o peores.
-- Los ML que mejor resultados arrojan son DT, RF, XGB y GNB.
-- La tarea 19 parece ser la que mayor valor de Accuracy arroja al aplicar los disntos algoritmos de ML. Seguida va la tarea 7.
+  
+- Los ML que mejor resultados arrojan son DT, RF, XGB y GNB, siendo GNB el mejor de todos
+  
+- La optimización de los modelos no mejora con la mayoría de clasificadores.
+
+- Ranking de modelos de mejor a peor (Acc/Sens/Spec): V2 // V1
+
+GNB: 83% / 89% / 76% // 83% / 89% / 76% /// V2 = V1
+RF: 80% / 89% / 71% // 80% / 89% / 71% /// V2 = V1
+XGB: 77% / 89% / 65 // 80% / 89% / 71% /// V2 < V1
+DT: 71% / 67% / 76% // 80% / 78% 82% /// V2 < V1
+MLP: 74% / 61% / 88% // 69% / 67% / 71% /// V2 > V1
+SVM: 66% / 67% / 65% // 77% / 78% / 76% /// V2 < V1
+LVQ: 71% / 78% / 65% // 66% / 56% / 76% /// V2 > V1
+LR: 69% / 72% / 65% // 69% / 72% / 65% /// V2 = V1
+LDA: 63% / 61% / 65% // 63% / 61% / 65% /// V2 = V1
+kNN: 69% / 44% / 94% // 63% / 39% / 88% /// V2 > V1
+
+- El modelo kNN tiene un valor de sensibilidad considerablemente bajo, clasificando erroneamente pacientes con Alzheimer (P).
+  
+- La tarea 19 parece ser la que mayor valor de Accuracy arroja al aplicar los disntos algoritmos de ML. Seguida va las tareas, 5 y 7 y 3 (en dicho orden).
+
+- Las peores tareas son la 13, 12 y 6 (de menos peor a mas).
+  
 - Las variables mas importantes extraídas del LLM SHAP (del XGBoost aplicado al dataset entero) son `total_time23` y `air_time_17`.
-- Al analizar el dataset por tareas con SHAP las variables mas destacadas en los distintos ML son `pressure_mean1`, `mean_speed_on_paper1`,
+  
+- Al analizar el dataset por tareas con SHAP las variables mas destacadas en los distintos ML son `pressure_mean1`, `mean_speed_on_paper1`.
+
+- Variables mas destacadas según SHAP, a partir de el número de tareas en las que figuran como variables destacadas.
+
+pressure_mean	14 / 25	Control motor fino — deteriora en AD
+total_time	11 / 25	Velocidad global de ejecución
+air_time	11 / 25	Pausas entre trazos — procesos cognitivos
+paper_time	11 / 25	Tiempo en contacto con papel
+max_y_extension	8 / 25	Amplitud vertical del trazo
+max_x_extension	7 / 25	Amplitud horizontal del trazo
+mean_jerk_on_paper	7 / 25	Irregularidad del movimiento
+pressure_var	4 / 25	Variabilidad en la presión
 
 **Referencias bibliográficas**
 
