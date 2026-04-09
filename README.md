@@ -42,9 +42,9 @@ En el archivo `darwin_ml4.ipynb` se aplican los algoritmos de ML seleccionados (
 
 - Al eliminar `mean_jerk_in_air` y `mean_speed_on_paper` por su alta correlación, los resultados no mejoran se mantienen iguales o peores.
   
-- Los ML que mejor resultados arrojan son DT, RF, XGB y GNB, siendo GNB el mejor de todos
+- Los ML que mejor resultados arrojan son DT, RF, XGB y GNB, siendo GNB el mejor de todos. Segun umbral 80 en V1
   
-- La optimización de los modelos no mejora con la mayoría de clasificadores.
+- La optimización (a partir de los hiperparámetros) de los modelos no mejora con la mayoría de clasificadores.
 
 - Ranking de modelos de mejor a peor (Acc/Sens/Spec): V2 // V1
 
