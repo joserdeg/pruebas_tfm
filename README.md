@@ -2,9 +2,9 @@
 
 ## Exploración de datos
 
-En el arcihvo `darwin_exp0.ipynb` se presenta un análisis exploratorio incial realizado al conjunto de datos de la base de datos DARWIN (en su totalidad).
+En el arcihvo `darwin_exp1.ipynb` se presenta un análisis exploratorio incial realizado al conjunto de datos de la base de datos DARWIN (en su totalidad).
 
-En el archivo `darwin_exp1.ipynb` se presenta un análisis descriptivo y estadístico agrupado según la tarea indicada (1-25), para estudiar las variables mas influyentes y su relación según la tarea.
+En el archivo `darwin_exp2.ipynb` se presenta un análisis descriptivo y estadístico agrupado según la tarea indicada (1-25), para estudiar las variables mas influyentes y su relación según la tarea.
 
 ## Clasificadores
 
@@ -24,7 +24,7 @@ En el archivo `darwin_exp1.ipynb` se presenta un análisis descriptivo y estadí
 El archivo `darwin2.py` se evalúan los 9 algoritmos BASE (sin mejora) sobre las 25 tareas del dataset DARWIN
 y devuelve una tabla con Accuracy, Sensibilidad, Especificidad y F1 por tarea/algoritmo.
 
-En el archivo `darwin_ml1.ipynb` se realiza una prueba de eliminación de variables, de aquellas con una alta correlación r > 0.90.
+En el archivo `darwin_exp3.ipynb` se realiza una prueba de eliminación de variables, de aquellas con una alta correlación r > 0.90.
 
 En el archivo `darwin_ml0.ipynb` se aplican los 10 clasificadores al conjunto de datos entero. Cada algoritmo se aplica dos veces, una primera vez con los parámetros por defecto y una segunda vez con los hiperparámetros definidos segín Cilia et al. (2022).
 
