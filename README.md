@@ -21,12 +21,12 @@ En el archivo `darwin_exp2.ipynb` se presenta un análisis descriptivo y estadí
 
 ## Algoritmos de ML
 
-El archivo `darwin2.py` se evalúan los 9 algoritmos BASE (sin mejora) sobre las 25 tareas del dataset DARWIN
+El archivo `darwin_1.py` se evalúan los 9 algoritmos BASE (sin mejora) sobre las 25 tareas del dataset DARWIN
 y devuelve una tabla con Accuracy, Sensibilidad, Especificidad y F1 por tarea/algoritmo.
 
 En el archivo `darwin_exp3.ipynb` se realiza una prueba de eliminación de variables, de aquellas con una alta correlación r > 0.90.
 
-En el archivo `darwin_ml0.ipynb` se aplican los 10 clasificadores al conjunto de datos entero. Cada algoritmo se aplica dos veces, una primera vez con los parámetros por defecto y una segunda vez con los hiperparámetros definidos segín Cilia et al. (2022).
+En el archivo `darwin_ml1.ipynb` se aplican los 10 clasificadores al conjunto de datos entero. Cada algoritmo se aplica dos veces, una primera vez con los parámetros por defecto y una segunda vez con los hiperparámetros definidos segín Cilia et al. (2022).
 
 En el archivo `darwin_ml2.ipynb` se aplican los 10 lasificadores a cada tarea, por separado. Cada algoritmo se aplica dos veces, una primera vez con los parámetros por defecto y una segunda vez con los hiperparámetros definidos segín Cilia et al. (2022).
 
@@ -34,9 +34,9 @@ En el archivo `darwin_ml2.ipynb` se aplican los 10 lasificadores a cada tarea, p
 
 Los cuatro algoritmos que mejores resultados arrojaron fueron Decision Tree (DT), Random Forest (RF), XGBoost y Gaussian Naive Bayes (GNB)
 
-En el archivo `darwin_ml3.ipynb` se aplican los algoritmos de ML seleccionados (DT, RF, XGB y GNB) en su versión por defecto, al dataset entero, para aplicar a posteriori los LLM SHAP y LIME a cada ML.
+En el archivo `darwin_llm1.ipynb` se aplican los algoritmos de ML seleccionados (DT, RF, XGB y GNB) en su versión por defecto, al dataset entero, para aplicar a posteriori los LLM SHAP y LIME a cada ML.
 
-En el archivo `darwin_ml4.ipynb` se aplican los algoritmos de ML seleccionados (DT, RF, XGB y GNB) en su versión por defecto a cada tarea del dataset, para aplicar a posterior los LLM SHAP y LIME a cada ML.
+En el archivo `darwin_llm2.ipynb` se aplican los algoritmos de ML seleccionados (DT, RF, XGB y GNB) en su versión por defecto a cada tarea del dataset, para aplicar a posterior los LLM SHAP y LIME a cada ML.
 
 # NOTAS
 
