@@ -38,6 +38,8 @@ En el archivo `darwin_llm1.ipynb` se aplican los algoritmos de ML seleccionados 
 
 En el archivo `darwin_llm2.ipynb` se aplican los algoritmos de ML seleccionados (DT, RF, XGB y GNB) en su versión por defecto a cada tarea del dataset, para aplicar a posterior los LLM SHAP y LIME a cada ML.
 
+En el archivo `darwin_llm3.ipynb` se aplica un protocolo simplificado, GNB y XGB para las tareas con mejores resultados 19, 7, 5 y 3 con las mínimas variables que mantienen o mejoran el accuracy en base a su importancia (según SHAP) y correlación entre ellas.
+
 # NOTAS
 
 - Al eliminar `mean_jerk_in_air` y `mean_speed_on_paper` por su alta correlación, los resultados no mejoran se mantienen iguales o peores.
