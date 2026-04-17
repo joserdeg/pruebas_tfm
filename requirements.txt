@@ -1,0 +1,30 @@
+# Entorno de desarrollo: Python 3.10.18
+
+# Procesamiento 
+numpy==2.3.5
+pandas==3.0.0
+scipy==1.17.1
+statsmodels==0.14.0
+
+# Machine Learning
+scikit-learn==1.8.0
+xgboost==2.1.0
+joblib==1.5.3
+threadpoolctl==3.6.0
+
+# Interpretabilidad e IA Explicable (XAI)
+shap==0.51.0
+lime==0.2.0.1
+slicer==0.0.8
+
+# Visualización
+matplotlib==3.10.8
+seaborn==0.13.2
+pillow==12.1.1
+fonttools==4.61.1
+
+# Utilidades y Acceso a Datos
+ucimlrepo==0.0.7
+requests==2.32.3
+tqdm==4.66.0
+openpyxl==3.1.5
